@@ -51,7 +51,7 @@ matplotlib~=3.10.6
 pandas~=2.3.2
 # pettingzoo        # For lab3 on MCTS
 # pygame~=2.6.1            # required for the "cartpole" Gym environment but already installed with Gymnasium
-# pyvirtualdisplay~=3.0  # required for rendering in a headless environment
+pyvirtualdisplay  # required for rendering in a headless environment
 # scipy~=1.16.2
 seaborn~=0.13.2
 tqdm~=4.67.1
