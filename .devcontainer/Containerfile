@@ -1,0 +1,13 @@
+FROM docker.io/library/python:3.12-slim
+
+# INSTALL GIT #################################################################
+
+RUN apt update -q -y && apt install -yq git vim && apt autoremove && apt clean
+
+# INSTALL SYSTEM DEPENDENCIES #################################################
+
+RUN apt update --yes && \
+    apt install --yes --no-install-recommends build-essential swig libbox2d2 && \
+    apt autoremove && \
+    apt clean && \
+    rm -rf /var/lib/apt/lists/*
