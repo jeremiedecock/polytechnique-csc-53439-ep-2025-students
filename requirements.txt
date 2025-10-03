@@ -1,1 +1,4 @@
 -r requirements_lab1.txt
+-r requirements_lab2.txt
+-r requirements_lab3.txt
+-r requirements_lab4.txt
