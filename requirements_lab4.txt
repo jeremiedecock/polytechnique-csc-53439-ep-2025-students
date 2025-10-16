@@ -20,7 +20,7 @@ torch~=2.8.0
 # Install Gymnasium with all the environments
 # C.f. https://github.com/Farama-Foundation/Gymnasium/blob/main/pyproject.toml
 
-gymnasium[classic-control,mujoco,other]~=1.2.1
+gymnasium[classic-control,box2d]~=1.2.1
 
 # Alternatively, you can install Gymnasium with specific environments only
 
@@ -37,7 +37,7 @@ gymnasium[classic-control,mujoco,other]~=1.2.1
 
 # opencv-python             # Required by some gymnasium wrappers (for other versions, see https://opencv.org/get-started/)
 # opencv-python-headless      # https://github.com/DLR-RM/stable-baselines3/issues/298
-stable-baselines3[extra]~=2.7.0
+# stable-baselines3[extra]~=2.7.0
 
 
 # REQUIRED DEPENDENCIES #######################################################
@@ -59,11 +59,11 @@ tqdm~=4.67.1
 
 # OPTIONAL DEPENDENCIES #######################################################
 
-aim~=3.29.1
-# moviepy      # Required by the "gym.wrappers.RecordVideo" wrapper
-optuna~=4.5.0
+# aim~=3.29.1
+moviepy      # Required by the "gym.wrappers.RecordVideo" wrapper
+# optuna~=4.5.0
 # optuna-dashboard
-tensorboard~=2.20.0
+# tensorboard~=2.20.0
 # wandb
 
 
